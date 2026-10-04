@@ -81,6 +81,34 @@ Good: "You execute the commands" or "I [Claude] will execute"
 
 See erubyte/claude-skills and MCPMarket for full skill list.
 
+## Skill Governance: Avoid Over-Installation
+
+**Goal:** Install only skills you'll use. Prevent duplication, conflicts, and scope creep.
+
+**Process when you find a skill you want:**
+
+1. **Show me the skill** — name, description, URL, what it does
+2. **I analyze it:**
+   - Check if you already have a skill that covers this
+   - Look for overlap or conflicts with installed skills
+   - Determine if it should fold into an existing skill instead
+   - Ask clarifying questions about why you need it
+3. **I recommend:**
+   - Install it (new capability, no conflicts)
+   - Skip it (already covered by something you have)
+   - Install as replacement (better version of something existing)
+   - Fold into existing (functionality belongs elsewhere)
+4. **You decide** — then I install or document the decision
+
+**Red flags I watch for:**
+- "Looks cool but I'm not sure what I'd use it for" → Skip
+- Overlapping scope with installed skills → Investigate before installing
+- Similar functionality to existing skill → Fold or replace
+- Dependency conflicts → Flag before install
+- Niche use case that might bloat your setup → Question worth of install
+
+**Quarterly cleanup:** Review installed skills, audit for unused/redundant ones, suggest deprecation.
+
 ## Available Skills
 
 All skills are installed in `~/.Claude/skills/` and available globally:
