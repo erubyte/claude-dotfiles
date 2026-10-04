@@ -171,5 +171,4 @@ New machine:
 
     git clone https://github.com/erubyte/claude-skills ~/claude-skills
     ln -sfn ~/claude-skills ~/.claude/skills
-    ln -sfn ~/claude-skills ~/.Claude/skills
     ln -sfn ~/claude-skills "$HOME/Library/Application Support/Claude/skills"

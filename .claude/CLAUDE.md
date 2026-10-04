@@ -122,18 +122,17 @@ When you show me a skill you want to install, I will:
 
 ## Skill Storage Rules (Permanent)
 
-Master copy: `~/claude-skills` (repo: erubyte/claude-skills). These paths are symlinks to it:
+Master copy: `~/claude-skills` (repo: erubyte/claude-skills). These paths are symlinks to it (macOS ignores case, so `~/.Claude` and `~/.claude` are the same path):
 - `~/.claude/skills`
-- `~/.Claude/skills`
 - `~/Library/Application Support/Claude/skills`
 
 Rules:
 - Never run `rm -rf` on any skills path. `~/.claude` is itself a symlink into `~/Claude-Sync`, so recursive deletes can destroy the master.
-- Edit and commit skills only in `~/claude-skills`.
+- Edit skills only in `~/claude-skills`. You (Claude) commit and push every skills change there yourself. Never tell the user to commit or push.
 - Remove a symlink with `rm <path>` (no `-r`) after checking `readlink <path>`.
 - Before any move, delete or consolidation: verify the target exists and the copy count matches, and move aside instead of deleting.
 - Install skills only via `bash ~/claude-skills/install-skill/install-skill.sh owner/repo@skill`. Never run `npx skills add` directly: it can write real copies into symlinked paths.
-- After changes, verify with `ls -ld` on all three paths and a skill count.
+- After changes, verify with `ls -ld` on both paths and a skill count.
 
 ## Available Skills
 
