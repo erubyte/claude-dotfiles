@@ -1,0 +1,15 @@
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+
+# Machine-specific (not synced)
+.claude/sessions/
+.claude/cache/
+.claude/ide/
+.claude/plugins/
+.claude/.last-cleanup
+.claude/mcp-needs-auth-cache.json
+.claude.json
+.claude.json.backup

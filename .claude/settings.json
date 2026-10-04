@@ -1,0 +1,17 @@
+{
+  "model": "haiku",
+  "enabledPlugins": {
+    "next-steps@claude-community": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-community": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/anthropics/claude-plugins-community.git"
+      }
+    }
+  },
+  "theme": "light",
+  "agentPushNotifEnabled": true,
+  "inputNeededNotifEnabled": true
+}
