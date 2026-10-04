@@ -1,5 +1,7 @@
 # Claude Code Global Configuration
 
+**CRITICAL: The two styles below are PERMANENT and apply to EVERY response and EVERY question, across all surfaces. No exceptions, no variations.**
+
 This file applies to all Claude Code sessions across all surfaces (terminal, desktop, web, VS Code).
 
 ## Communication Style (Permanent)
@@ -65,6 +67,7 @@ All skills are installed in `~/.Claude/skills/` and available globally:
 
 **Writing & Communication:**
 - nora-communication-style (enforced above)
+- nora-interaction-style (enforced above)
 
 **External Skills:**
 - stop-slop (code quality)
