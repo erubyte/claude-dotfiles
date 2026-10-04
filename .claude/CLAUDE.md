@@ -97,7 +97,7 @@ All skills are installed in `~/.Claude/skills/` and available globally:
 
 **External Skills:**
 - stop-slop (code quality)
-- improve-codebase-architecture
+- improve-codebase-architecture (installed: mattpocock/skills — avoid reinvention, improve architecture)
 - find-skills (discover new skills)
 - install-skill (install from GitHub)
 
