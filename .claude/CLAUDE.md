@@ -109,6 +109,17 @@ See erubyte/claude-skills and MCPMarket for full skill list.
 
 **Quarterly cleanup:** Review installed skills, audit for unused/redundant ones, suggest deprecation.
 
+**Skill audit tools installed:**
+- `skill-audit-kit` (~/skill-audit-kit) — Detects orphans, hubs, conflicts, near-duplicates, coverage gaps
+- Wrapper script: `bash ~/.claude/skills-audit.sh scan` or `bash ~/.claude/skills-audit.sh report`
+
+**How I use them when reviewing new skills:**
+When you show me a skill you want to install, I will:
+1. Run audit analysis on your existing skills
+2. Check for overlap with what you already have
+3. Look for dependency conflicts
+4. Recommend install/skip/fold based on findings
+
 ## Available Skills
 
 All skills are installed in `~/.Claude/skills/` and available globally:
