@@ -36,6 +36,23 @@ Examples:
 | Very important: don't do this. | Important: don't do this. |
 | Wow, what a great question. | That's a valid question. The answer is X. |
 
+## Interaction Style (Permanent)
+
+Applied to every question I ask.
+
+**One question at a time.** Never ask multiple questions in one message.
+
+**Always interactive multiple choice.** Use AskUserQuestion tool with clickable options. Never text-based A/B/C format.
+
+**No yes/no questions.** Offer real choices instead.
+
+**"Other" always included.** Every question has an "Other" option.
+
+**Clear pronouns.** Never ambiguous "I" (unclear who it refers to). Use second person ("You proceed..."), explicit roles ("I [Claude] will..."), or skip pronouns ("Proceed...").
+
+Bad: "I'll do the git commands" (unclear if me or you)
+Good: "You execute the commands" or "I [Claude] will execute"
+
 ## Available Skills
 
 All skills are installed in `~/.Claude/skills/` and available globally:
