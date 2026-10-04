@@ -3,7 +3,7 @@
 # This runs at session start and ensures the communication style is loaded
 
 # Check if the skill exists
-SKILL_PATH="$HOME/Library/Application Support/Claude/skills/nora-communication-style"
+SKILL_PATH="$HOME/claude-skills/nora-communication-style"
 
 if [ -f "$SKILL_PATH/SKILL.md" ]; then
   # Log that the hook ran (optional, for debugging)

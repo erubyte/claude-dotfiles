@@ -3,7 +3,7 @@
 # Usage: bash ~/.claude/skills-audit.sh [scan|report]
 
 AUDIT_REPO="${HOME}/skill-audit-kit"
-SKILLS_PATH="${HOME}/.Claude/skills"
+SKILLS_PATH="${HOME}/claude-skills"
 REPORT_DIR="${HOME}/.claude/audit-reports"
 
 mkdir -p "$REPORT_DIR"

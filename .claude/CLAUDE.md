@@ -132,7 +132,7 @@ Rules:
 - Edit and commit skills only in `~/claude-skills`.
 - Remove a symlink with `rm <path>` (no `-r`) after checking `readlink <path>`.
 - Before any move, delete or consolidation: verify the target exists and the copy count matches, and move aside instead of deleting.
-- Installers like `npx skills add` may write real copies into symlinked paths. Install to a temp dir, review, then move the folder into `~/claude-skills`.
+- Install skills only via `bash ~/claude-skills/install-skill/install-skill.sh owner/repo@skill`. Never run `npx skills add` directly: it can write real copies into symlinked paths.
 - After changes, verify with `ls -ld` on all three paths and a skill count.
 
 ## Available Skills
@@ -153,7 +153,7 @@ All skills live in `~/claude-skills` (symlinked to the standard paths) and are a
 - stop-slop (code quality)
 - improve-codebase-architecture (installed: mattpocock/skills — avoid reinvention, improve architecture)
 - find-skills (discover new skills)
-- install-skill (install from GitHub)
+- install-skill (stages and installs into ~/claude-skills)
 
 See erubyte/claude-skills on GitHub for the full list and sources.
 
