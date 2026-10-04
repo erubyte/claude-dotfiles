@@ -120,9 +120,24 @@ When you show me a skill you want to install, I will:
 3. Look for dependency conflicts
 4. Recommend install/skip/fold based on findings
 
+## Skill Storage Rules (Permanent)
+
+Master copy: `~/claude-skills` (repo: erubyte/claude-skills). These paths are symlinks to it:
+- `~/.claude/skills`
+- `~/.Claude/skills`
+- `~/Library/Application Support/Claude/skills`
+
+Rules:
+- Never run `rm -rf` on any skills path. `~/.claude` is itself a symlink into `~/Claude-Sync`, so recursive deletes can destroy the master.
+- Edit and commit skills only in `~/claude-skills`.
+- Remove a symlink with `rm <path>` (no `-r`) after checking `readlink <path>`.
+- Before any move, delete or consolidation: verify the target exists and the copy count matches, and move aside instead of deleting.
+- Installers like `npx skills add` may write real copies into symlinked paths. Install to a temp dir, review, then move the folder into `~/claude-skills`.
+- After changes, verify with `ls -ld` on all three paths and a skill count.
+
 ## Available Skills
 
-All skills are installed in `~/.Claude/skills/` and available globally:
+All skills live in `~/claude-skills` (symlinked to the standard paths) and are available globally:
 
 **agentsKB Management:**
 - agentsKB-practices
