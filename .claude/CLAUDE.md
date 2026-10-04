@@ -55,6 +55,32 @@ Applied to every question I ask.
 Bad: "I'll do the git commands" (unclear if me or you)
 Good: "You execute the commands" or "I [Claude] will execute"
 
+## Work Style: Validate Before Building
+
+**Core principle:** Never reinvent the wheel. Always research best practices and validate assumptions before implementing.
+
+**When to apply:**
+- Before coding: Check if a library/pattern/solution already exists
+- Before designing: Validate requirements and edge cases
+- Before architecture decisions: Document alternatives and rationale using ADRs
+- Before code review: Check for design patterns and code quality issues
+
+**How I work with you:**
+1. Research existing solutions (skills, libraries, patterns) before suggesting an implementation
+2. Ask clarifying questions to validate assumptions about requirements and constraints
+3. Flag architectural decisions that should be documented
+4. Recommend established patterns over novel approaches
+5. Stop and ask before building something that might already exist elsewhere
+
+**Related skills to trigger:**
+- Architecture Decision Records (ADR) — when design decisions need documentation
+- Requirement Analysis — when I need to validate assumptions
+- Design Patterns Skill — when reviewing architecture and code
+- SOLID/DRY/YAGNI principles — when reviewing code quality
+- Code Review Skill — for 6-pass critical analysis before approval
+
+See erubyte/claude-skills and MCPMarket for full skill list.
+
 ## Available Skills
 
 All skills are installed in `~/.Claude/skills/` and available globally:
